@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tejaswini Madhav Gouda | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">TMG<span class="dot-cyan">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-btn">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- mobile overlay -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <button class="close-btn" id="closeBtn">✕</button>
+    <ul>
+      <li><a href="#about"      onclick="closeMobile()">About</a></li>
+      <li><a href="#skills"     onclick="closeMobile()">Skills</a></li>
+      <li><a href="#projects"   onclick="closeMobile()">Projects</a></li>
+      <li><a href="#experience" onclick="closeMobile()">Experience</a></li>
+      <li><a href="#education"  onclick="closeMobile()">Education</a></li>
+      <li><a href="#contact"    onclick="closeMobile()">Hire Me</a></li>
+    </ul>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <canvas id="canvas"></canvas>
+    <div class="hero-inner">
+      <h1>
+        <span class="h1-white">Tejaswini</span><br/>
+        <span class="h1-cyan">Madhav Gouda</span>
+      </h1>
+      <p class="hero-role">
+        <span id="typewriter"></span><span class="caret">|</span>
+      </p>
+      <p class="hero-sub">CS Undergrad '26 &nbsp;·&nbsp; Java Full Stack Developer &nbsp;·&nbsp; Building scalable web solutions</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-solid">View Projects</a>
+        <a href="#contact"  class="btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><span class="hstat-n">2+</span><span class="hstat-l">Internships</span></div>
+        <div class="hdiv"></div>
+        <div class="hstat"><span class="hstat-n">8.78</span><span class="hstat-l">CGPA</span></div>
+        <div class="hdiv"></div>
+        <div class="hstat"><span class="hstat-n">4</span><span class="hstat-l">Certifications</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- LEFT: Text -->
+        <div class="about-text reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Crafting Digital <span class="cyan">Experiences</span></h2>
+          <p class="body-text">Computer Science undergraduate with hands-on experience in <strong>Java Full Stack Development</strong> through internships and academic projects. I love turning complex problems into clean, efficient, scalable code.</p>
+          <p class="body-text">Proficient in Java, JSP, Servlets, JDBC, MySQL, HTML, CSS, and JavaScript — with a solid foundation in OOP, MVC architecture, and database design.</p>
+          <div class="badges">
+            <span>🎓 B.E. CSE 2026</span>
+            <span>📍 India</span>
+            <span>🏆 NPTEL Certified</span>
+            <span>🛡️ CySeck Certified</span>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:tejaswinigouda980@gmail.com" class="clink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+              tejaswinigouda980@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/tejaswini-madhav-gouda" target="_blank" class="clink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn Profile
+            </a>
+            <a href="tel:+918147571507" class="clink">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.83a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 16l.28.92z"/></svg>
+              +91 8147571507
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Profile Photo -->
+        <div class="profile-wrap reveal">
+          <div class="profile-pic-wrap">
+            <img src="Photo.jpeg" alt="Tejaswini Madhav Gouda" class="profile-pic" />
+            <div class="pic-glow"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section sec-alt" id="skills">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">What I Know</p>
+        <h2>Technical <span class="cyan">Skills</span></h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-card">
+          <div class="sk-icon">☕</div>
+          <h3>Languages</h3>
+          <div class="tags"><span>Java</span><span>Python</span><span>JavaScript</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="sk-icon">🎨</div>
+          <h3>Frontend</h3>
+          <div class="tags"><span>HTML5</span><span>CSS3</span><span>JSP</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="sk-icon">⚙️</div>
+          <h3>Backend</h3>
+          <div class="tags"><span>Servlets</span><span>JDBC</span><span>MVC</span><span>OOP</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="sk-icon">🗄️</div>
+          <h3>Database</h3>
+          <div class="tags"><span>MySQL</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="sk-icon">🧠</div>
+          <h3>Core CS</h3>
+          <div class="tags"><span>OOPS</span><span>OS</span><span>Networks</span></div>
+        </div>
+        <div class="skill-card">
+          <div class="sk-icon">🤖</div>
+          <h3>AI / NLP</h3>
+          <div class="tags"><span>Speech Recog.</span><span>TTS</span><span>NLP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">What I've Built</p>
+        <h2>Featured <span class="cyan">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <span class="proj-emoji">🍕</span>
+            <span class="proj-date mono">Jan 2026 – Mar 2026</span>
+          </div>
+          <h3>FoodVerse</h3>
+          <p class="proj-sub">Online Food Ordering Web Application</p>
+          <p class="proj-desc">Full-stack food ordering platform with restaurant browsing, cart management, order placement, authentication, session management, and order tracking.</p>
+          <ul class="proj-points">
+            <li>MySQL via JDBC for efficient data storage</li>
+            <li>MVC architecture with JSP &amp; Servlets</li>
+            <li>Complete auth + checkout + order history</li>
+          </ul>
+          <div class="proj-stack">
+            <span>Java</span><span>JSP</span><span>Servlets</span><span>JDBC</span><span>MySQL</span>
+          </div>
+        </div>
+        <div class="proj-card reveal">
+          <div class="proj-top">
+            <span class="proj-emoji">🎙️</span>
+            <span class="proj-date mono">Sep 2025 – Dec 2025</span>
+          </div>
+          <h3>SpeakAI</h3>
+          <p class="proj-sub">Voice-Controlled Virtual Assistant</p>
+          <p class="proj-desc">AI-powered voice assistant that understands commands and generates intelligent responses, with full speech-to-text and text-to-speech capability.</p>
+          <ul class="proj-points">
+            <li>Automated info retrieval via voice commands</li>
+            <li>NLP techniques for conversational AI</li>
+            <li>Speech recognition + TTS pipeline</li>
+          </ul>
+          <div class="proj-stack">
+            <span>Python</span><span>Speech Recog.</span><span>TTS</span><span>NLP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="section sec-alt" id="experience">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Where I've Worked</p>
+        <h2>Work <span class="cyan">Experience</span></h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <h3>Software Development Intern</h3>
+                <p class="tl-company">Tap Academy</p>
+              </div>
+              <span class="tl-date mono">Jan 2026 – May 2026</span>
+            </div>
+            <ul class="tl-points">
+              <li>Developed web apps using Java, Servlets, JSP, JDBC, and MySQL</li>
+              <li>Built backend modules for authentication and database connectivity</li>
+              <li>Applied MVC architecture and OOP principles to scalable applications</li>
+              <li>Collaborated in designing, testing, and debugging software systems</li>
+            </ul>
+            <div class="tags"><span>Java</span><span>Servlets</span><span>JSP</span><span>MySQL</span></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <h3>Web Development Intern</h3>
+                <p class="tl-company">InternPe</p>
+              </div>
+              <span class="tl-date mono">Oct 2025 – Nov 2025</span>
+            </div>
+            <ul class="tl-points">
+              <li>Built responsive web pages using HTML, CSS, and JavaScript</li>
+              <li>Created interactive UI components for improved user experience</li>
+              <li>Ensured cross-browser compatibility for all web applications</li>
+              <li>Assisted in website optimization and performance debugging</li>
+            </ul>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Academic Journey</p>
+        <h2>Education <span class="cyan">Timeline</span></h2>
+      </div>
+      <div class="edu-grid reveal">
+        <div class="edu-card edu-featured">
+          <div class="edu-badge">Current</div>
+          <div class="edu-icon-wrap">🎓</div>
+          <span class="edu-year mono">2022 – 2026</span>
+          <h3>B.E. in Computer Science Engineering</h3>
+          <p class="edu-inst">Bearys Institute of Technology</p>
+          <div class="edu-score">
+            <span class="score-lbl">CGPA</span>
+            <span class="score-val">8.78</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon-wrap">📚</div>
+          <span class="edu-year mono">2020 – 2022</span>
+          <h3>Pre-University College (PUC)</h3>
+          <p class="edu-inst">Morarji Desai Residential College</p>
+          <div class="edu-score">
+            <span class="score-lbl">Percentage</span>
+            <span class="score-val">84.5%</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon-wrap">🏫</div>
+          <span class="edu-year mono">2019 – 2020</span>
+          <h3>SSLC (10th Standard)</h3>
+          <p class="edu-inst">Kittur Rani Chennamma Residential School</p>
+          <div class="edu-score">
+            <span class="score-lbl">Percentage</span>
+            <span class="score-val">87.84%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACHIEVEMENTS ── -->
+  <section class="section sec-alt" id="achievements">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Milestones</p>
+        <h2>Certifications &amp; <span class="cyan">Achievements</span></h2>
+      </div>
+      <div class="achieve-grid reveal">
+        <div class="ach-card">
+          <span class="ach-icon">🏆</span>
+          <div>
+            <p class="ach-title">NPTEL Certification</p>
+            <p class="ach-sub">Programming in Java</p>
+          </div>
+        </div>
+        <div class="ach-card">
+          <span class="ach-icon">🛡️</span>
+          <div>
+            <p class="ach-title">Cyber Security Certification</p>
+            <p class="ach-sub">CySeck</p>
+          </div>
+        </div>
+        <div class="ach-card">
+          <span class="ach-icon">💼</span>
+          <div>
+            <p class="ach-title">Full Stack Dev Internship Cert.</p>
+            <p class="ach-sub">Tap Academy</p>
+          </div>
+        </div>
+        <div class="ach-card">
+          <span class="ach-icon">🌐</span>
+          <div>
+            <p class="ach-title">Personal Portfolio Website</p>
+            <p class="ach-sub">Deployed via GitHub Pages</p>
+          </div>
+        </div>
+        <div class="ach-card">
+          <span class="ach-icon">🚀</span>
+          <div>
+            <p class="ach-title">2 Full-Stack Academic Projects</p>
+            <p class="ach-sub">Developed using Java technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section contact-sec" id="contact">
+    <div class="container">
+      <div class="contact-box reveal">
+        <p class="eyebrow">Let's Connect</p>
+        <h2>Open to <span class="cyan">Opportunities</span></h2>
+        <p class="body-text" style="margin:1.2rem auto 2.2rem; max-width:520px; text-align:center;">
+          Actively looking for internship and full-time roles in Java / Full Stack Development. Let's build something great together!
+        </p>
+        <div class="contact-btns">
+          <a href="mailto:tejaswinigouda980@gmail.com" class="btn-solid">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            Send Email
+          </a>
+          <a href="https://www.linkedin.com/in/tejaswini-madhav-gouda" target="_blank" class="btn-outline">View LinkedIn</a>
+        </div>
+        <p class="contact-phone mono">📞 +91 8147571507</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p>Designed &amp; Developed by <span class="cyan">Tejaswini Madhav Gouda</span> · 2026</p>
+    <p class="ft-sub mono">HTML · CSS · JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
